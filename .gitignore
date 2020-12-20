@@ -1,0 +1,4 @@
+node_modules/
+base.db
+yarn.lock
+.DS_Store

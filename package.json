@@ -1,0 +1,14 @@
+{
+  "name": "knowledgeDB",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "YoichiTadokoro",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "11.0.0",
+    "path": "^0.12.7",
+    "sqlite": "^4.0.18",
+    "sqlite3": "^5.0.0",
+    "vue": "^2.6.12"
+  }
+}
