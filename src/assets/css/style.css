@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin: 0 8px;
 }
 
-#hero .php-email-form button[type="submit"] {
+#hero .php-email-form button[type="button"] {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: #fd680e;
 }
 
-#hero .php-email-form button[type="submit"]:hover {
+#hero .php-email-form button[type="button"]:hover {
   background: #fd8841;
 }
 

@@ -80,6 +80,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
+    <div id="vue_main">
     <div class="hero-container">
       <h1>CAE Knowledge Database</h1>
       <h2>Examples and tips our team developed are stored here.</h2>
@@ -87,14 +88,16 @@
       <form action="" method="post" role="form" class="php-email-form">
         <div class="row no-gutters">
           <div class="col-md-6 form-group pr-md-1">
-            <input type="text" name="keywords" class="form-control" id="keywords" placeholder="キーワード検索" data-msg="キーワード検索" />
+            <input v-model="keyword" type="text" name="keywords" class="form-control" id="keywords" placeholder="キーワード検索" data-msg="キーワード検索" />
             <div class="validate"></div>
           </div>
           <div class="col-md-6 form-group pr-md-1">
-            <div class="text-center"><button type="submit" onclick="location.href='search_sample.html'">検索</button></div>
+            <div class="text-center"><button type="button" @click="btn_search_keyword">検索</button></div>
           </div>
         </div>
       </form>
+    </div>
+    {{keyword}},{{query}}
     </div>
   </section><!-- #hero -->
 
@@ -162,7 +165,6 @@
 
       </div>
     </section><!-- End Why Us Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -186,9 +188,11 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="../node_modules/vue/dist/vue.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/vue_main.js"></script>
 
 </body>
 
